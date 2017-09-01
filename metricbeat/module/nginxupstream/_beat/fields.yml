@@ -1,0 +1,11 @@
+- key: nginxupstream
+  title: "Nginx Upstream Status"
+  description: >
+    Nginx upstream server status metrics collected from various modules.
+  short_config: false
+  fields:
+    - name: nginxupstream
+      type: group
+      description: >
+        nginx upstream contains the metrics that were scraped from nginx.
+      fields:

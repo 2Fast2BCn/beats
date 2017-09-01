@@ -1,0 +1,45 @@
+- name: status
+  type: group
+  description: >
+    `status` contains the metrics that were scraped from the nginx_upstream_check_module status page.
+  fields:
+    - name: Index
+      type: integer
+      description: >
+        An index for the list entry
+    - name: Upstream
+      type: keyword
+      description: >
+        Name of the upstream
+    - name: Name
+      type: keyword
+      description: >
+        Path of the upstream
+    - name: Status
+      type: keyword
+      description: >
+        Status of the upstream (up/down)
+    - name: Rise
+      type: integer
+      description: >
+        The amount of positive tests
+    - name: Fall
+      type: integer
+      description: >
+        The amount of failed tests
+    - name: Type
+      type: keyword
+      description: >
+        The type of test
+    - name: Port
+      type: integer
+      description: >
+        The port used by the test (default 80)
+    - name: since
+      type: keyword
+      description: >
+        The date of the last event change
+    - name: elapse
+      type: integer
+      description: >
+        The elapse in seconds since the last event change
